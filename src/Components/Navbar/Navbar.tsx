@@ -10,34 +10,35 @@ export const Navbar = () => {
           <div className="h-[45px] aspect-square grid place-items-center">
             <img src={linkedin} className="h-[35px] aspect-square" alt="logo" />
           </div>
-          <div className="">
-            <form method="POST">
-              <div className="relative">
-                <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg
-                    className="w-5 h-5 text-gray-500 dark:text-gray-400"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    ></path>
-                  </svg>
+          <div className="h-[52px] w-[100%] flex items-center justify-between">
+            <div className="w-[40%]">
+              <form>
+                <div className="relative">
+                  <div className="flex absolute inset-y-0 left-0 items-center pl-4 pointer-events-none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      data-supported-dps="16x16"
+                      fill="#5F6163"
+                      className="mercado-match"
+                      width="16"
+                      height="16"
+                      focusable="false"
+                    >
+                      <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    id="default-search"
+                    className="placeholder:text-gray-600 block h-[35px] pl-10 w-[280px] focus:w-[380px] duration-300 text-sm  rounded bg-[#EEF3F8] "
+                    placeholder="Search"
+                    required
+                  />
                 </div>
-                <input
-                  className="b-0 rounded bg-[#eef3f8] h-[35px] w-[280px] pl-10 placeholder-black placeholder:font-thin placeholder:text-sm"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Search"
-                />
-              </div>
-            </form>
+              </form>
+            </div>
+            <div className="w-[68%] h-full  ml-7"></div>
           </div>
         </div>
       </div>
